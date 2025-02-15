@@ -1,0 +1,52 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Tarjeta Gráfica NVIDIA RTX 3080",
+            "descripcion": "GPU para gaming 4K con 10GB GDDR6X y soporte para ray tracing",
+            "precio": 799.99,
+            "stock": 8,
+            "categoria": ""
+        },
+        {
+            "id": 2,
+            "nombre": "Procesador AMD Ryzen 9 5900X",
+            "descripcion": "CPU de 12 núcleos y 24 hilos, 3.7GHz base / 4.8GHz turbo",
+            "precio": 549.99,
+            "stock": 15,
+            "categoria": ""
+        },
+        {
+            "id": 3,
+            "nombre": "Disco SSD NVMe 1TB Samsung 970 EVO",
+            "descripcion": "Almacenamiento de alta velocidad con lecturas de 3500MB/s",
+            "precio": 129.95,
+            "stock": 30,
+            "categoria": ""
+        },
+        {
+            "id": 4,
+            "nombre": "Placa Madre ASUS ROG X570",
+            "descripcion": "Placa base AM4 con soporte PCIe 4.0 y RGB Sync",
+            "precio": 299.00,
+            "stock": 12,
+            "categoria": ""
+        },
+        {
+            "id": 5,
+            "nombre": "Memoria RAM Corsair Vengeance 32GB DDR4",
+            "descripcion": "Kit de 2x16GB 3200MHz CL16 para alto rendimiento",
+            "precio": 149.99,
+            "stock": 20,
+            "categoria": ""
+        },
+        {
+            "id": 6,
+            "nombre": "Fuente de Poder EVGA 850W 80+ Gold",
+            "descripcion": "Fuente modular certificada para sistemas de alto consumo",
+            "precio": 159.50,
+            "stock": 18,
+            "categoria": ""
+        }
+    ]
+}
