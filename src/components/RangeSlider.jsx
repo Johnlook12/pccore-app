@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function RangeSlider({ value, handleChange }) {
+export default function RangeSlider({ value, handleChange, min, max }) {
 
 
     const handleChangeValue = (event) => {
@@ -10,7 +10,7 @@ export default function RangeSlider({ value, handleChange }) {
 
     return (
         <div className="space-x-5 inline">
-            <input className="h-2 rounded-lg cursor-pointer" type="range" value={value} onChange={handleChangeValue} />
+            <input className="h-2 rounded-lg cursor-pointer" type="range" min={min} max={max} value={value} onChange={handleChangeValue} />
             <span className="text-lg">{value}</span>
         </div>
     )
