@@ -6,7 +6,7 @@
             "descripcion": "GPU para gaming 4K con 10GB GDDR6X y soporte para ray tracing",
             "precio": 799.99,
             "stock": 8,
-            "categoria": ""
+            "categoria_id": 1
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "descripcion": "CPU de 12 núcleos y 24 hilos, 3.7GHz base / 4.8GHz turbo",
             "precio": 549.99,
             "stock": 15,
-            "categoria": ""
+            "categoria_id": 2
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "descripcion": "Almacenamiento de alta velocidad con lecturas de 3500MB/s",
             "precio": 129.95,
             "stock": 30,
-            "categoria": ""
+            "categoria_id": 3
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "descripcion": "Placa base AM4 con soporte PCIe 4.0 y RGB Sync",
             "precio": 299.00,
             "stock": 12,
-            "categoria": ""
+            "categoria_id": 4
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "descripcion": "Kit de 2x16GB 3200MHz CL16 para alto rendimiento",
             "precio": 149.99,
             "stock": 20,
-            "categoria": ""
+            "categoria_id": 5
         },
         {
             "id": 6,
@@ -46,7 +46,33 @@
             "descripcion": "Fuente modular certificada para sistemas de alto consumo",
             "precio": 159.50,
             "stock": 18,
-            "categoria": ""
+            "categoria_id": 6
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nombre": "Tarjeta Gráfica"
+        },
+        {
+            "id": 2,
+            "nombre": "Procesador"
+        },
+        {
+            "id": 3,
+            "nombre": "Almacenamiento"
+        },
+        {
+            "id": 4,
+            "nombre": "Placa Madre"
+        },
+        {
+            "id": 5,
+            "nombre": "Memoria RAM"
+        },
+        {
+            "id": 6,
+            "nombre": "Fuente de Poder"
         }
     ]
 }
