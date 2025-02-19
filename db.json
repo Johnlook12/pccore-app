@@ -74,5 +74,20 @@
             "id": 6,
             "nombre": "Fuente de Poder"
         }
+    ],
+    "usuarios":[],
+    "tipousuario":[
+        {
+            "id":1,
+            "nombre": "administrador"
+        },
+        {
+            "id":2,
+            "nombre": "empleado"
+        },
+        {
+            "id":3,
+            "nombre": "cliente"
+        }
     ]
 }
