@@ -6,7 +6,6 @@ import medal from "../assets/img/medal.svg";
 import logo from '../assets/img/logo.png';
 import LoginForm from "../components/LoginForm";
 import RegisterForm from "../components/RegisterForm";
-import { Routes, Route } from "react-router-dom";
 
 export default function LoginPage({formType}) {
 
