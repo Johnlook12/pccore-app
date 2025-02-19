@@ -1,8 +1,11 @@
-import { Routes, Route } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Layout } from './components/Layout'
+import { AuthProvider } from './context/AuthContext'
 import { HomePage } from './pages/HomePage'
-import ShopPage  from './pages/ShopPage'
+import ShopPage from './pages/ShopPage'
+import LoginPage from './pages/LoginPage'
+import ProtectedRoute from './components/ProtectedRoute'
 
 function App() {
 
@@ -10,13 +13,19 @@ function App() {
 
   return (
     <>
-      <Layout>
+      <AuthProvider>
         <Routes>
-          <Route path='/' element={<HomePage />}></Route>
-          <Route path='/tienda' element={<ShopPage />}></Route>
+          <Route path='/login' element={<LoginPage formType={"login"}/>}></Route>
+          <Route path='/register' element={<LoginPage formType={"register"}/>}></Route>
+          <Route path='/' element={<Layout><HomePage /></Layout>}></Route>
+          <Route path='/tienda' element={
+            <Layout>
+              <ShopPage />
+            </Layout>
+          }></Route>
           <Route path='/otro' element={<Home />}></Route>
         </Routes>
-      </Layout>
+      </AuthProvider>
     </>
   )
 }
