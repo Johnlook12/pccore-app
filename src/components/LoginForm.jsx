@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
+
 
 export default function LoginForm() {
 
@@ -7,6 +9,7 @@ export default function LoginForm() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
+    const { login } = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -28,7 +31,7 @@ export default function LoginForm() {
     return (
         <div>
             <div className="grid p-5 justify-items-center m-5  border-l md:w-100 lg:w-150">
-                <h1 className="m-4 font-bold text-3xl ">Iniciar sesión</h1>
+                <h1 className="m-4 font-bold text-4xl mb-10 text-blue-400 ">Iniciar sesión</h1>
                 <form className="space-y-5" onSubmit={handleSubmit}>
                     <div className="text-center">
                         <label className="text-xl" htmlFor="">Email</label>
