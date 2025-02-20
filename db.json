@@ -75,7 +75,29 @@
             "nombre": "Fuente de Poder"
         }
     ],
-    "usuarios":[],
+    "usuarios":[
+        {
+            "nombre": "Pablo",
+            "apellidos": "Rodríguez",
+            "email": "prodriguez@email.com",
+            "password": "abc123.",
+            "tipousuario_id":1 
+        },
+        {
+            "nombre": "María",
+            "apellidos": "Pérez",
+            "email": "mp@email.com",
+            "password": "abc123.",
+            "tipousuario_id":2
+        },
+        {
+            "nombre": "Alejandro",
+            "apellidos": "Mendoza",
+            "email": "am@email.com",
+            "password": "abc123.",
+            "tipousuario_id":3
+        }
+    ],
     "tipousuario":[
         {
             "id":1,
