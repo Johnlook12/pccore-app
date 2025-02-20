@@ -7,10 +7,10 @@ import logo from '../assets/img/logo.png';
 import LoginForm from "../components/LoginForm";
 import RegisterForm from "../components/RegisterForm";
 
-export default function LoginPage({formType}) {
+export default function LoginPage({ formType }) {
 
-    
-    const { user, login } = useAuth();
+
+    const { user } = useAuth();
     const navigate = useNavigate();
 
 
@@ -28,18 +28,18 @@ export default function LoginPage({formType}) {
             <div className="flex">
                 <div className="pr-45 space-y-20 mt-10 pb-10 mr-15">
                     <div>
-                        <img className="w-25 " src={medal} alt="" />
+                        <img className="w-25 mb-5" src={medal} alt="" />
                         <h4 className="font-bold text-2xl">Lista de deseos</h4>
                         <span>Gestiona tus productos favoritos en la lista de deseos</span>
                     </div>
                     <div>
-                        <img className="w-25 " src={cart} alt="" />
+                        <img className="w-25 mb-5" src={cart} alt="" />
                         <h4 className="font-bold text-2xl">Carrito de la compra</h4>
                         <span>Añade tus productos al carrito</span>
                     </div>
                 </div>
-                {formType==="login" && <LoginForm />}
-                {formType==="register" && <RegisterForm />}
+                {formType === "login" && <LoginForm />}
+                {formType === "register" && <RegisterForm />}
             </div>
         </div>
     )
