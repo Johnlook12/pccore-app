@@ -1,115 +1,142 @@
 {
-    "productos": [
-        {
-            "id": 1,
-            "nombre": "Tarjeta Gráfica NVIDIA RTX 3080",
-            "descripcion": "GPU para gaming 4K con 10GB GDDR6X y soporte para ray tracing",
-            "precio": 799.99,
-            "stock": 8,
-            "categoria_id": 1
-        },
-        {
-            "id": 2,
-            "nombre": "Procesador AMD Ryzen 9 5900X",
-            "descripcion": "CPU de 12 núcleos y 24 hilos, 3.7GHz base / 4.8GHz turbo",
-            "precio": 549.99,
-            "stock": 15,
-            "categoria_id": 2
-        },
-        {
-            "id": 3,
-            "nombre": "Disco SSD NVMe 1TB Samsung 970 EVO",
-            "descripcion": "Almacenamiento de alta velocidad con lecturas de 3500MB/s",
-            "precio": 129.95,
-            "stock": 30,
-            "categoria_id": 3
-        },
-        {
-            "id": 4,
-            "nombre": "Placa Madre ASUS ROG X570",
-            "descripcion": "Placa base AM4 con soporte PCIe 4.0 y RGB Sync",
-            "precio": 299.00,
-            "stock": 12,
-            "categoria_id": 4
-        },
-        {
-            "id": 5,
-            "nombre": "Memoria RAM Corsair Vengeance 32GB DDR4",
-            "descripcion": "Kit de 2x16GB 3200MHz CL16 para alto rendimiento",
-            "precio": 149.99,
-            "stock": 20,
-            "categoria_id": 5
-        },
-        {
-            "id": 6,
-            "nombre": "Fuente de Poder EVGA 850W 80+ Gold",
-            "descripcion": "Fuente modular certificada para sistemas de alto consumo",
-            "precio": 159.50,
-            "stock": 18,
-            "categoria_id": 6
-        }
-    ],
-    "categorias": [
-        {
-            "id": 1,
-            "nombre": "Tarjeta Gráfica"
-        },
-        {
-            "id": 2,
-            "nombre": "Procesador"
-        },
-        {
-            "id": 3,
-            "nombre": "Almacenamiento"
-        },
-        {
-            "id": 4,
-            "nombre": "Placa Madre"
-        },
-        {
-            "id": 5,
-            "nombre": "Memoria RAM"
-        },
-        {
-            "id": 6,
-            "nombre": "Fuente de Poder"
-        }
-    ],
-    "usuarios":[
-        {
-            "nombre": "Pablo",
-            "apellidos": "Rodríguez",
-            "email": "prodriguez@email.com",
-            "password": "abc123.",
-            "tipousuario_id":1 
-        },
-        {
-            "nombre": "María",
-            "apellidos": "Pérez",
-            "email": "mp@email.com",
-            "password": "abc123.",
-            "tipousuario_id":2
-        },
-        {
-            "nombre": "Alejandro",
-            "apellidos": "Mendoza",
-            "email": "am@email.com",
-            "password": "abc123.",
-            "tipousuario_id":3
-        }
-    ],
-    "tipousuario":[
-        {
-            "id":1,
-            "nombre": "administrador"
-        },
-        {
-            "id":2,
-            "nombre": "empleado"
-        },
-        {
-            "id":3,
-            "nombre": "cliente"
-        }
-    ]
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Tarjeta Gráfica NVIDIA RTX 3080",
+      "descripcion": "GPU para gaming 4K con 10GB GDDR6X y soporte para ray tracing",
+      "precio": 799.99,
+      "stock": 8,
+      "categoria_id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Procesador AMD Ryzen 9 5900X",
+      "descripcion": "CPU de 12 núcleos y 24 hilos, 3.7GHz base / 4.8GHz turbo",
+      "precio": 549.99,
+      "stock": 15,
+      "categoria_id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Disco SSD NVMe 1TB Samsung 970 EVO",
+      "descripcion": "Almacenamiento de alta velocidad con lecturas de 3500MB/s",
+      "precio": 129.95,
+      "stock": 30,
+      "categoria_id": 3
+    },
+    {
+      "id": 4,
+      "nombre": "Placa Madre ASUS ROG X570",
+      "descripcion": "Placa base AM4 con soporte PCIe 4.0 y RGB Sync",
+      "precio": 299,
+      "stock": 12,
+      "categoria_id": 4
+    },
+    {
+      "id": 5,
+      "nombre": "Memoria RAM Corsair Vengeance 32GB DDR4",
+      "descripcion": "Kit de 2x16GB 3200MHz CL16 para alto rendimiento",
+      "precio": 149.99,
+      "stock": 20,
+      "categoria_id": 5
+    },
+    {
+      "id": 6,
+      "nombre": "Fuente de Poder EVGA 850W 80+ Gold",
+      "descripcion": "Fuente modular certificada para sistemas de alto consumo",
+      "precio": 159.5,
+      "stock": 18,
+      "categoria_id": 6
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Tarjeta Gráfica"
+    },
+    {
+      "id": 2,
+      "nombre": "Procesador"
+    },
+    {
+      "id": 3,
+      "nombre": "Almacenamiento"
+    },
+    {
+      "id": 4,
+      "nombre": "Placa Madre"
+    },
+    {
+      "id": 5,
+      "nombre": "Memoria RAM"
+    },
+    {
+      "id": 6,
+      "nombre": "Fuente de Poder"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Pablo",
+      "apellidos": "Rodríguez",
+      "email": "prodriguez@email.com",
+      "password": "abc123.",
+      "tipousuario_id": 1
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellidos": "Pérez",
+      "email": "mp@email.com",
+      "password": "abc123.",
+      "tipousuario_id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Alejandro",
+      "apellidos": "Mendoza",
+      "email": "am@email.com",
+      "password": "abc123.",
+      "tipousuario_id": 3
+    },
+    {
+      "nombre": "Esteban",
+      "apellidos": "Martínez",
+      "email": "em@email.com",
+      "password": "abc123.",
+      "tipousuario_id": 3,
+      "id": 4
+    },
+    {
+      "nombre": "Candela",
+      "apellidos": "Torres",
+      "email": "ct@email.com",
+      "password": "abc123.",
+      "tipousuario_id": 3,
+      "id": 5
+    },
+    {
+      "nombre": "Iria",
+      "apellidos": "Dacal",
+      "email": "id@email.com",
+      "password": "abc123.",
+      "tipousuario_id": 3,
+      "id": 6
+    }
+  ],
+  "tipousuario": [
+    {
+      "id": 1,
+      "nombre": "administrador"
+    },
+    {
+      "id": 2,
+      "nombre": "empleado"
+    },
+    {
+      "id": 3,
+      "nombre": "cliente"
+    }
+  ]
 }
