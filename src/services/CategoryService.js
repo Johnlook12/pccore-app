@@ -14,3 +14,17 @@ export async function findAll(){
         throw error;        
     }
 }
+
+export async function findById(id){
+    try {
+        const response = await fetch(`${API_BASE_URL}/${id}`);
+        if(!response.ok){
+            console.log("Error status: "+response.status);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Fallo en la solciitud: '+error);
+        throw error;
+    }
+}
