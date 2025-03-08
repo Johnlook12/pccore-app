@@ -1,22 +1,28 @@
 @import "tailwindcss";
 
-body{
+
+body {
   padding: 0;
   margin: 0;
 }
 
-.bg-custom-blue{
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bg-custom-blue {
   background-color: #00A3E0;
 }
 
-.bg-fondo{
+.bg-fondo {
   background-color: #333333;
 }
 
-.text-color-secondary{
+.text-color-secondary {
   color: #C0C0C0;
 }
 
-.text-custom-plate:hover{
+.text-custom-plate:hover {
   color: #C0C0C0;
 }
