@@ -9,6 +9,11 @@ import LoginPage from './pages/LoginPage'
 import ProtectedAdminRoute from "./components/ProtectedAdminRoute"
 import image403 from "./assets/img/403.jpg";
 import ProductsPage from './pages/ProductsPage';
+import { ProductsProvider } from './context/ProductsContext'
+import UsersPage from './pages/UsersPage'
+import { CarritoProvider } from './context/CartContext'
+import ProductDetail from './components/ProductDetail'
+import { ContactPage } from './pages/ContactPage'
 function App() {
 
   const Unauthorized = () => <div className='min-h-screen justify-items-center'>
@@ -19,26 +24,43 @@ function App() {
   return (
     <>
       <AuthProvider>
-        <Routes>
-          <Route path='/login' element={<LoginPage formType={"login"} />}></Route>
-          <Route path='/register' element={<LoginPage formType={"register"} />}></Route>
-          <Route path='/' element={<Layout><HomePage /></Layout>}></Route>
-          <Route path='/products' element={
-            <ProtectedAdminRoute>
-              <Layout><ProductsPage></ProductsPage></Layout>
-            </ProtectedAdminRoute>}></Route>
-          <Route path='/admin' element={
-            <ProtectedAdminRoute>
-              <Layout><AdminPanelPage /></Layout>
-            </ProtectedAdminRoute>}></Route>
-          <Route path='/tienda' element={
-            <Layout>
-              <ShopPage />
-            </Layout>
-          }></Route>
-          <Route path='/unauthorized' element={<Layout><Unauthorized /></Layout>}>
-          </Route>
-        </Routes>
+
+        <CarritoProvider>
+
+          <ProductsProvider>
+
+            <Routes>
+              <Route path='/login' element={<LoginPage formType={"login"} />}></Route>
+              <Route path='/register' element={<LoginPage formType={"register"} />}></Route>
+              <Route path='/' element={<Layout><HomePage /></Layout>}></Route>
+              <Route path='/users' element={
+                <ProtectedAdminRoute>
+                  <Layout><UsersPage /></Layout>
+                </ProtectedAdminRoute>
+              }></Route>
+              <Route path='/producto/:id' element={<Layout><ProductDetail/></Layout>}></Route>
+              <Route path='/contacto' element={<Layout><ContactPage></ContactPage></Layout>}></Route>
+              <Route path='/products' element={
+                <ProtectedAdminRoute>
+                  <Layout><ProductsPage></ProductsPage></Layout>
+                </ProtectedAdminRoute>}></Route>
+              <Route path='/admin' element={
+                <ProtectedAdminRoute>
+                  <Layout><AdminPanelPage /></Layout>
+                </ProtectedAdminRoute>}></Route>
+              <Route path='/tienda' element={
+                <Layout>
+                  <ShopPage />
+                </Layout>
+              }></Route>
+              <Route path='/unauthorized' element={<Layout><Unauthorized /></Layout>}>
+              </Route>
+            </Routes>
+
+          </ProductsProvider>
+
+        </CarritoProvider>
+
       </AuthProvider>
     </>
   )
