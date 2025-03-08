@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useUser } from "../hooks/useUser";
 import { Link } from "react-router-dom";
-import SuccessAlert from "../components/SuccessAlert"
+import SuccessRegisterAlert from "./SuccessRegisterAlert"
 
 export default function RegisterForm() {
     const [showSuccess, setShowSuccess] = useState('');
@@ -66,7 +66,7 @@ export default function RegisterForm() {
         <div className="grid p-5 justify-items-center m-5  border-l md:w-100 lg:w-150">
             <h1 className="m-4 font-bold text-4xl mb-13 text-blue-400">Registro</h1>
             {showSuccess && (
-                <SuccessAlert userName={nombre} onClose={()=>setShowSuccess(false)}/>
+                <SuccessRegisterAlert userName={nombre} onClose={()=>setShowSuccess(false)}/>
             )}
             <span className="text-red-600 font-bold">{error}</span>
             <form className="space-y-5" onSubmit={handleSubmit}>
