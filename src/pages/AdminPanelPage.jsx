@@ -1,8 +1,12 @@
 import React from "react";
 import { ArrowTopRightOnSquareIcon, WrenchIcon, UserGroupIcon, CubeIcon } from "@heroicons/react/24/solid";
+import { useAuth } from "../context/AuthContext";
 import { Link } from "react-router-dom";
 
 export default function AdminPanelPage() {
+
+    const {user} = useAuth();
+
     return (
         <div className="min-h-screen bg-[#333333] py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -41,7 +45,7 @@ export default function AdminPanelPage() {
                         </div>
                     </Link>
 
-                    <Link 
+                    {user.tipoUsuario.nombre === "administrador" && <Link 
                         to="/users"
                         className="group relative bg-[#444444] hover:bg-[#3a3a3a] border-2 border-[#C0C0C0]/20 rounded-xl p-8 transition-all duration-300 hover:border-[#00A3E0] hover:shadow-[0_0_25px_rgba(0,163,224,0.1)]"
                     >
@@ -62,7 +66,7 @@ export default function AdminPanelPage() {
                                 <ArrowTopRightOnSquareIcon className="w-5 h-5 ml-2" />
                             </div>
                         </div>
-                    </Link>
+                    </Link> }
 
                     <div className="group relative bg-[#444444] border-2 border-[#C0C0C0]/20 rounded-xl p-8 opacity-70 cursor-not-allowed">
                         <div className="text-center">

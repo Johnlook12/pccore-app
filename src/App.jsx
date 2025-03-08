@@ -7,6 +7,7 @@ import AdminPanelPage from './pages/AdminPanelPage'
 import ShopPage from './pages/ShopPage'
 import LoginPage from './pages/LoginPage'
 import ProtectedAdminRoute from "./components/ProtectedAdminRoute"
+import ProtectedEmpRoute from "./components/ProtectedEmpRoute";
 import image403 from "./assets/img/403.jpg";
 import ProductsPage from './pages/ProductsPage';
 import { ProductsProvider } from './context/ProductsContext'
@@ -41,13 +42,13 @@ function App() {
               <Route path='/producto/:id' element={<Layout><ProductDetail/></Layout>}></Route>
               <Route path='/contacto' element={<Layout><ContactPage></ContactPage></Layout>}></Route>
               <Route path='/products' element={
-                <ProtectedAdminRoute>
+                <ProtectedEmpRoute>
                   <Layout><ProductsPage></ProductsPage></Layout>
-                </ProtectedAdminRoute>}></Route>
+                </ProtectedEmpRoute>}></Route>
               <Route path='/admin' element={
-                <ProtectedAdminRoute>
+                <ProtectedEmpRoute>
                   <Layout><AdminPanelPage /></Layout>
-                </ProtectedAdminRoute>}></Route>
+                </ProtectedEmpRoute>}></Route>
               <Route path='/tienda' element={
                 <Layout>
                   <ShopPage />
