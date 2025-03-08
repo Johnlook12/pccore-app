@@ -1,27 +1,30 @@
-import {useEffect, useState} from 'react';
-import { findAll, add, findById } from '../services/UserService';
+import { useEffect, useState } from 'react';
+import { findAll as findAllService, add, findById as findByIdService, deleteUser as deleteService, updateUser as updateUserService } from '../services/UserService';
 
-export const useUser = () =>{
-    const[usuarios, setUsuarios] = useState([]);
-    const[loading, setLoading] = useState(true);
-    const[error, setError] = useState('');
+export const useUser = () => {
+    const [usuarios, setUsuarios] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
 
-
-    useEffect(()=>{
-        const fetchUsers = async()=>{
-            try {
-                const data = await findAll();
-                 return data;
-            } catch (error) {
-                setError(error);
-            } finally{
-                setLoading(false);
-            }
+    const findAll = async () => {
+        setLoading(true);
+        setError('');
+        try {
+            const data = await findAllService();
+            setUsuarios(data);
+            return data;
+        } catch (error) {
+            setError(error);
+        } finally {
+            setLoading(false);
         }
-        fetchUsers();
+    }
+
+    useEffect(() => {
+        findAll();
     }, []);
 
-    const insertUser = async (newUser)=>{
+    const insertUser = async (newUser) => {
         setLoading(true);
         setError('');
         try {
@@ -29,23 +32,50 @@ export const useUser = () =>{
             return createdData;
         } catch (error) {
             setError(error);
-        } finally{
+        } finally {
             setLoading(false);
         }
     }
 
-    const findById = async (id)=>{
+    const findById = async (id) => {
         setLoading(true);
+        setError('');
         try {
-            const data = await findById(id);
+            const data = await findByIdService(id);
             return data;
         } catch (error) {
             setError(error);
-        } finally{
+        } finally {
             setLoading(false);
         }
-    } 
+    }
 
-    return { usuarios, findById, insertUser, loading, error};
+    const deleteUser = async (id) => {
+        setLoading(true);
+        setError('');
+        try {
+            const response = await deleteService(id);
+            return response;
+        } catch (error) {
+            setError(error);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    const updateUser = async (id, user) => {
+        setLoading(true);
+        setError('');
+        try {
+            const updatedUser = await updateUserService(id, user);
+            return updatedUser;
+        } catch (error) {
+            setError(error);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    return { usuarios, findById,updateUser, findAll, deleteUser, insertUser, loading, error };
 }
 
