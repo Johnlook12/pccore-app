@@ -130,7 +130,7 @@ export default function ProductForm({ onSubmit, typeAction, id }) {
                         className="w-full bg-[#444444] border border-[#C0C0C0]/20 rounded-lg px-4 py-3 text-white focus:border-[#00A3E0] focus:ring-2 focus:ring-[#00A3E0]/50"
                         type="number"
                         value={stock}
-                        onChange={(e) => setStock(parseFloat(e.target.value))}
+                        onChange={(e) => setStock(parseInt(e.target.value))}
                         required
                     />
                 </div>
