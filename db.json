@@ -41,12 +41,60 @@
       "categoria_id": 6
     },
     {
-      "nombre": "GTX",
-      "descripcion": "asdasasdasd",
-      "precio": 12,
-      "stock": 19,
+      "nombre": "Intel Core i5-13400F 2.5 GHz/4.6 GHz",
+      "descripcion": "Nuestro nuevo procesador Intel® Core™ de 13? generación no solo es un chip, es un multiverso donde todos pueden tener todo y ser todo. Asciende en las tablas de clasificaciones, crea mundos y haz cuentas, todo a la vez. Consigue el rendimiento máximo de última generación para todo lo que haces con los procesadores Intel® Core™ de 13? generación.\r\n\r\nCaracterísticas:\r\nArquitectura híbrida de rendimiento avanzado: Arquitectura híbrida de rendimiento avanzado con procesadores Intel Core de 13? generación con hasta ocho P-cores y hasta 16 E-cores, combinado con cargas de trabajo con la enrutación inteligente de Intel® Thread Director.\r\nDiseñados para el juego moderno: Diseñado para los jugadores que buscan el máximo rendimiento para disfrutar de los videojuegos más recientes, conservando las capacidades para soportar otras cargas de trabajo. Con los nuevos ordenadores con procesadores Intel Core de 13? generación todo es posible.\r\nExperiencia de creación superior: La familia de procesadores Intel® Core™ de 13? generación ofrece P-cores más rápidos y más E-cores compatibles con DDR4/DDR5 y PCIe 4.0/5.0. Esto proporciona una plataforma que puede maximizar la realización de multitareas y la opción de configurabilidad.\r\nPersonaliza todas tus actividades del día a día: Los procesadores Intel® Core™ de 13? generación ofrecen una arquitectura altamente flexible y herramientas líderes en la industria para la mejor personalización del rendimiento.",
+      "precio": 130,
+      "stock": 3,
       "categoria_id": 2,
       "id": 7
+    },
+    {
+      "nombre": "Procesador AMD Ryzen 9 9950X 4.3/5.7GHz",
+      "descripcion": "El AMD Ryzen™ 9 9950X es un procesador de la serie Ryzen 9 de AMD, diseñado para ofrecer un rendimiento sólido y equilibrado tanto en aplicaciones de productividad como en juegos. Preparado para el nuevo socket AM5 con una litográfica de 4nm.\r\n\r\nDispone de 16 núcleos y 32 hilos de ejecución, con una frecuencia base de 4.3Ghz y una turbo de 5.7Ghz.\r\n\r\nEspecificaciones AMD Ryzen 9 9950X\r\nProcesador\r\nFabricante de procesador: AMD\r\nModelo del procesador: 9950X\r\nFrecuencia base del procesador: 4,3 GHz\r\nFamilia de procesador: AMD Ryzen™ 9\r\nNúmero de núcleos de procesador: 16\r\nSocket de procesador: Zócalo AM5\r\nLitografía del procesador: 4 nm\r\nNúmero de hilos de ejecución: 32\r\nModo de procesador operativo: 64 bits\r\nFrecuencia del procesador turbo: 5,7 GHz\r\nCaché del procesador: 80 MB\r\nTipo de cache en procesador: L2 & L3\r\nPotencia de diseño térmico (TDP): 170 W\r\nCaja: Si\r\nRefrigerador incluido: No",
+      "precio": 670,
+      "stock": 16,
+      "categoria_id": 2,
+      "id": 8
+    },
+    {
+      "nombre": "MSI GeForce RTX 4060 VENTUS 2X BLACK OC 8GB GDDR6 DLSS3",
+      "descripcion": "VENTUS brinda una experiencia fundamentalmente sólida a los usuarios que buscan una tarjeta gráfica de alto rendimiento. Un diseño actualizado de aspecto nítido con TORX FAN 4.0 permite que VENTUS realice cualquier tarea.\r\n\r\nJuega, transmite, crea. La GeForce RTX™ 4060 te permite disfrutar de los últimos juegos y aplicaciones con la arquitectura ultraeficiente NVIDIA Ada Lovelace. Experimente juegos inmersivos acelerados por IA con ray tracing y DLSS 3, y potencie su proceso creativo y productividad con NVIDIA Studio.\r\n\r\nGeForce RTX Serie 40: La plataforma definitiva para jugadores y creadores\r\n\r\nLas GPU NVIDIA® GeForce RTX® serie 40 son más que rápidas para jugadores y creadores. Cuentan con la tecnología de la arquitectura ultra eficiente NVIDIA Ada Lovelace, que ofrece un salto espectacular tanto en rendimiento como en gráficos con tecnología de IA. Disfruta de mundos virtuales realistas con trazado de rayos y juegos con FPS ultra altos y la latencia más baja. Descubre nuevas y revolucionarias formas de crear contenido y una aceleración de flujo de trabajo sin precedentes.",
+      "precio": 320,
+      "stock": 23,
+      "categoria_id": 1,
+      "id": 9
+    },
+    {
+      "nombre": "Gigabyte AMD Radeon RX 7800 XT GAMING OC 16GB GDDR6",
+      "descripcion": "Experimente un rendimiento, imágenes y eficiencia increíbles al jugar y transmitir con las tarjetas gráficas AMD Radeon™ RX 7700 XT y 7800 XT, impulsadas por la arquitectura AMD RDNA™ 3. Sumérgete en experiencias de escritorio de próxima generación en algunas de las pantallas de alta frecuencia de actualización más avanzadas con hasta 16 GB de memoria GDDR6, nuevas tecnologías de generación de fotogramas, trazado de rayos avanzado, aceleradores de IA y codificación AV1.\r\n\r\nLas tarjetas gráficas AMD Radeon™ RX 7700 XT y 7800 XT establecen un nuevo nivel de rendimiento para los jugadores. Con hasta 16 GB de memoria GDDR6, unidades de cómputo AMD RDNA™ 3 unificadas y funciones de próxima generación para permitir un rendimiento de juegos ultrarrápido y fluido a 1440p y la flexibilidad para experimentar gráficos ultradetallados en 4K. Sumérgete aún más con AMD Radiance Display™ Engine y DisplayPort™ 2.1 para experimentar hasta 68 mil millones de colores para reproducción de video y compatibilidad con hasta 8K.",
+      "precio": 550,
+      "stock": 14,
+      "categoria_id": 1,
+      "id": 10
+    },
+    {
+      "nombre": "Tarjeta Gráfica ASUS PRIME GeForce RTX 5070 12GB GDDR7 Reflex 2 RTX AI DLSS4",
+      "descripcion": "ASUS TUF Gaming GeForce RTX™ 5070 12 GB GDDR7 con componentes de grado militar, temperaturas más bajas y durabilidad mejorada\r\n\r\nGeForce RTX Serie 50\r\nCambia el juego. Con tecnología de NVIDIA Blackwell, las GPU GeForce RTX™ serie 50 ofrecen capacidades revolucionarias a jugadores y creadores. Equipada con una increíble potencia de IA, la RTX serie 50 abre el camino hacia nuevas experiencias y ofrece fidelidad gráfica de siguiente nivel. Multiplica el rendimiento con NVIDIA DLSS 4, genera imágenes a una velocidad sin precedentes y libera tu creatividad con NVIDIA Studio.",
+      "precio": 840,
+      "stock": 2,
+      "categoria_id": 1,
+      "id": 11
+    },
+    {
+      "nombre": "Tarjeta Gráfica Sapphire PURE AMD Radeon RX 9070 16GB GDDR6 FSR 4",
+      "descripcion": "Experimente un rendimiento, unas imágenes y una eficiencia increíbles al jugar y transmitir con las tarjetas gráficas AMD Radeon™ RX 9070 XT y 9070, impulsadas por la arquitectura AMD RDNA™ 4. Sumérjase en experiencias de escritorio de última generación en algunas de las pantallas de alta frecuencia de actualización más avanzadas con hasta 16 GB de memoria GDDR6, nuevas tecnologías de generación de cuadros, trazado de rayos avanzado, aceleradores de IA, codificación AV1 y compatibilidad con la última tecnología DisplayPort™ 2.1.\r\n\r\nLas Radeon™ RX 9070 XT y 9070 ofrecen una increíble experiencia de juego y transmisión de 1440p con alta frecuencia de actualización, con memoria de video adicional para pasar a 4K.\r\n\r\nSumérjase en imágenes impresionantes con la precisión de color milimétrica de AMD Radiance Display™ Engine y aumente la velocidad de cuadros con las tecnologías de mejora de resolución AMD FidelityFX™ Super Resolution y Radeon™ Super Resolution. Para desbloquear aún más rendimiento, combine las tarjetas gráficas AMD Radeon™ RX 9000 Series y los procesadores AMD Ryzen™ compatibles para activar las tecnologías inteligentes de AMD.",
+      "precio": 740,
+      "stock": 15,
+      "categoria_id": 1,
+      "id": 12
+    },
+    {
+      "nombre": "ASUS TUF GAMING B650-PLUS",
+      "descripcion": "ASUS TUF GAMING B650-PLUS toma todos los elementos esenciales de los últimos procesadores de la serie AMD Ryzen 7000 y los combina con funciones listas para jugar y durabilidad comprobada. Diseñada con componentes de grado militar, una solución de alimentación mejorada y un sistema de refrigeración integral, esta placa base supera las expectativas con un rendimiento sólido y estable para juegos de maratón.\r\n\r\nLas placas base TUF GAMING también se someten a rigurosas pruebas de resistencia para garantizar que puedan soportar condiciones en las que otras pueden fallar. Estéticamente, este modelo incorpora elementos de diseño geométricos y de color negro oscuro para reflejar la confiabilidad y estabilidad que define a la serie TUF GAMING.",
+      "precio": 189.99,
+      "stock": 34,
+      "categoria_id": 4,
+      "id": 13
     }
   ],
   "categorias": [
