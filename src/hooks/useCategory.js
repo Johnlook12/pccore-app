@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { findAll } from '../services/CategoryService';
+import { findAll, findById } from '../services/CategoryService';
 
 export const useCategory = () => {
     const [categorias, setCategorias] = useState([]);
@@ -19,6 +19,19 @@ export const useCategory = () => {
         }
         fetchCategories();
     }, []);
+
+    const getById = async (id)=>{
+        setLoading(true);
+        setError('');
+        try {
+            const data = await findById(id);
+            return data;
+        } catch (error) {
+            setError(error);
+        } finally{
+            setLoading(false);
+        }
+    }
     
-    return { categorias, loading, error };
+    return { categorias, getById, loading, error };
 }
