@@ -1,3 +1,4 @@
+import { parse } from "dotenv";
 import { createContext, useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -6,11 +7,16 @@ const AuthContext = createContext();
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [token, setToken] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
         const storedUser = localStorage.getItem('user');
-        if (storedUser) setUser(JSON.parse(storedUser));
+        if (storedUser){
+            const parsedUser = JSON.parse(storedUser);
+            setUser(parsedUser);  
+            setToken(parsedUser.token);
+        };
         setLoading(false);
     }, []);
 
@@ -27,14 +33,16 @@ export function AuthProvider({ children }) {
         const data = await response.json();
 
         if (response.ok && data.token) {
-            const { token, user: userData } = data;
+            const {user: userData } = data;
 
+            setToken(data.token);
+            
             const tipoResponse = await fetch(`http://localhost:3001/tipousuario/${userData.tipousuario_id}`);
-
+            
             const tipoUsuario = await tipoResponse.json();
-
-            const fullUser = { ...userData, tipoUsuario,token };
-
+            
+            const fullUser = { ...userData, tipoUsuario, token: data.token };
+            
             setUser(fullUser);
             localStorage.setItem('user', JSON.stringify(fullUser));
             setLoading(false);
@@ -45,11 +53,12 @@ export function AuthProvider({ children }) {
 
     const logout = () =>{
         setUser(null);
+        navigate('/');
         localStorage.removeItem('user');
     }
 
     return(
-        <AuthContext.Provider value={{user,loading, login, logout}}>
+        <AuthContext.Provider value={{user,loading,token, login, logout}}>
             {children}
         </AuthContext.Provider>
     );
