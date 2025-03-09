@@ -63,12 +63,14 @@ const CartSidebar = ({ isOpen, onClose }) => {
                   <div className="flex items-center gap-2">
                     <button 
                       onClick={() => removeFromCart(item.id)}
+                      type='button'
                       className="text-[#C0C0C0] hover:text-[#00A3E0] transition-colors"
                     >
                       <MinusCircleIcon className="h-6 w-6" />
                     </button>
                     <button 
                       onClick={() => addToCart(item)}
+                      type='button'
                       disabled={item.cantidad >= item.stock}
                       className={`${
                         item.cantidad >= item.stock 

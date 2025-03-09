@@ -5,8 +5,10 @@ export function ProductList({ productos }) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
             {productos.map((item) => (
-                <ProductCard producto={item} />
+                <ProductCard key={item.id} producto={item} />
+
+
             ))}
         </div>
-    )
+    );
 }

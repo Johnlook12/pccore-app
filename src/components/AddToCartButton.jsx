@@ -12,7 +12,9 @@ export function AddToCartButton({ product, quantity }) {
     const inCart = cart.find(item => item.id === product.id);
     const disponible = product.stock - (inCart?.cantidad || 0);
 
-    const handleAddToCart = () => {
+const handleAddToCart = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         if (!user) {
             navigate('/login');
             return;
@@ -23,6 +25,7 @@ export function AddToCartButton({ product, quantity }) {
     return (
         <button
             onClick={handleAddToCart}
+            type="button"
             disabled={!user || disponible === 0}
             className={`w-full cursor-pointer flex items-center justify-center gap-2 py-3 px-4 rounded-lg font-semibold transition-all ${!user || disponible === 0
                     ? 'bg-[#C0C0C0]/20 text-[#C0C0C0]/50 cursor-not-allowed'

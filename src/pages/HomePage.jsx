@@ -73,7 +73,6 @@ export function HomePage() {
 
                 <div className="mt-12 text-center">
                     <button
-                        to="/tienda"
                         className="inline-block border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 cursor-pointer"
                         onClick={handleNavigateStore}
                     >

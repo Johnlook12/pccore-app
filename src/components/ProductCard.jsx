@@ -83,7 +83,8 @@ export function ProductCard({ producto }) {
                 </p>
             </div>
 
-            <AddToCartButton product={producto}></AddToCartButton>
+<AddToCartButton product={producto} quantity={1}></AddToCartButton>
+
             <Link to={`/producto/${producto.id}`} className="w-full cursor-pointer flex items-center justify-center gap-2 py-3 px-4 rounded-lg font-semibold transition-all" aria-label="Ver detalles">
                 Detalles
             </Link>

@@ -13,6 +13,7 @@ const Producto = ({ producto }) => {
       <p>Disponible: {disponible}</p>
       <button 
         onClick={() => addToCart(producto)} 
+        type='button'
         disabled={disponible === 0}
       >
         {disponible === 0 ? 'Agotado' : 'Añadir al carrito'}
